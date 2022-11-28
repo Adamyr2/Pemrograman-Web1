@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Institut Teknologi Bandung</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- img -->
+    <link rel="icon" href="img/itb1.png">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body>
+        <!--Main Navigation-->
+    <header>
+      <style>
+        /* Carousel styling */
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+        .carousel-item:nth-child(1) {
+          background-image: url('img/Campus.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(2) {
+          background-image: url('img/Campus2.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(3) {
+          background-image: url('img/22.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 60vh;
+          }
+        }
+        .navbar .nav-link {
+          color: white !important;
+        }
+    table {
+    width:100%;
+        }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+        }
+    th, td {
+    padding: 5px;
+    text-align: left;
+        }
+    table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+        }
+    table#t01 th {
+    background-color: black;
+    color: white;
+        }
+        .site-footer
+      {
+        background-color:#272727;
+        padding:45px 0 20px;
+        font-size:15px;
+        line-height:24px;
+        color:#737373;
+      }
+      .site-footer hr
+      {
+        border-top-color:#bbb;
+        opacity:0.5
+      }
+      .site-footer hr.small
+      {
+        margin:20px 0
+      }
+      .site-footer h6
+      {
+        color:#fff;
+        font-size:16px;
+        text-transform:uppercase;
+        margin-top:5px;
+        letter-spacing:2px
+      }
+      .site-footer a
+      {
+        color:#737373;
+      }
+      .site-footer a:hover
+      {
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .footer-links
+      {
+        padding-left:0;
+        list-style:none
+      }
+      .footer-links li
+      {
+        display:block
+      }
+      .footer-links a
+      {
+        color:#737373
+      }
+      .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+      {
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .footer-links.inline li
+      {
+        display:inline-block
+      }
+    
+      .copyright-text
+      {
+        margin:0
+      }
+      @media (max-width:991px)
+      {
+        .site-footer [class^=col-]
+        {
+          margin-bottom:30px
+        }
+      }
+      @media (max-width:767px)
+      {
+        .site-footer
+        {
+          padding-bottom:0
+        }
+        .site-footer .copyright-text,.site-footer .social-icons
+        {
+          text-align:center
+        }
+      }
+      </style>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand nav-link" target="_blank" href="https://www.itb.ac.id/">
+            <strong>ITB</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="https://www.itb.ac.id/" target="_blank">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.itb.ac.id/program-studi" target="_blank">PROGRAM STUDI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.itb.ac.id/sejarah" target="_blank">PROFILE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.itb.ac.id/penelitian" target="_blank">PENELITIAN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Carousel wrapper -->
+      <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2 class="mb-3">INSTITUT TEKNOLOGI BANDUNG</h2>
+                  <h4 class="mb-4">Selamat Datang</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2 class="mb-3">VISI</h2>
+                  <h4 class="mb-4">
+                    Menjadi Perguruan Tinggi yang unggul, bermartabat, mandiri, 
+                    dan diakui dunia <p>serta memandu perubahan yang mampu meningkatkan kesejahteraan bangsa Indonesia dan dunia.</p></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2 class="mb-3">MISI</h2>
+                  <h4 class="mb-4">Menciptakan, berbagi dan menerapkan ilmu pengetahuan, teknologi, seni dan
+                     kemanusiaan <p>serta menghasilkan sumber daya insani yang unggul untuk menjadikan Indonesia dan dunia lebih baik.</p></h4>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Carousel wrapper -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
+        <!--Section: Content-->
+        <section>
+          <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+              <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+                <img src="img/Campus1.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 gx-5 mb-4">
+              <h4><strong>Institut Teknologi Bandung</strong></h4>
+              <p class="text-muted">
+                Institut Teknologi Bandung (ITB) merupakan sekolah tinggi teknik pertama di Indonesia yang didirikan pada tanggal 2 Maret 1959 di
+                 Jawa Barat yang mengemban misi pengabdian ilmu pengetahuan dan teknologiuntuk memajukan Indonesia. Lahir dalam suasana penuh dinamika yang dilandasi dengan 
+                 semangat perjuangan Proklamasi Kemerdekaan, ITB hadir untuk mengoptimalkan pembangunan bangsa yang maju dan bermartabat.
+              </p>
+              <p><strong>ITB Kampus Ganesha</strong></p>
+              <p class="text-muted">
+                Kampus Ganesha merupakan kampus utama Institut Teknologi Bandung. Berlokasi di Jl. Ganesa No. 10, Bandung, Jawa Barat, Indonesia
+                dengan luas sekitar 28 hektar, kampus ini terus mengalami perluasan dan penambahan fasilitas. Kampus ITB Ganesha didirikan pada tahun 1920 dengan nama Technische Hoogeschool.
+                Di sekitar Kampus ITB Ganesha, terdapat fasilitas penunjang perkuliahan seperti aula, sarana olah raga berupa running track, 
+                lapangan sepak bola, kolam renang, layanan kesehatan, masjid, serta asrama mahasiswa.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+              <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+                <img src="img/zoom.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 gx-5 mb-4">
+              <h4><strong>Observatorium Bosscha</strong></h4>
+              <p class="text-muted">
+                Observatorium Bosscha adalah lembaga riset yang berada di bawah naungan Fakultas Matematika dan Ilmu Pengetahuan Alam Institut Teknologi Bandung (FMIPA ITB).
+                 Hingga saat ini, Observatorium Bosscha merupakan satu-satunya observatorium besar di Indonesia.
+                 Bersama-sama dengan Program Studi Astronomi, FMIPA ITB, Observatorium Bosscha menjadi pusat penelitian, pendidikan, dan pengembangan ilmu Astronomi di Indonesia.
+              </p>
+              <p><strong>Benda Cagar Budaya Indonesia</strong></p>
+              <p class="text-muted">
+                <ul>
+                  <li>Observatorium Bosscha dilindungi UU Nomor 2/1992 tentang Benda Cagar Budaya.</li>
+                  <li>Tahun 2008, Pemerintah menetapkan Observatorium Bosscha sebagai salah satu Objek Vital nasional yang harus diamankan</li>
+                  <li>Observatorium Bosscha juga menerima mahasiswa maupun peneliti yang ingin belajar topik-topik non-astronomi yang relevan, misalnya tentang sejarah,
+                     bangunan, manajemen, serta lingkungan di Observatorium Bosscha.</li>
+                </ul>
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-6 gx-5 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+                  <img src="img/zoo.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
+  
+              <div class="col-md-6 gx-5 mb-4">
+                <h4><strong>Museum Zoologi</strong></h4>
+                <p class="text-muted">
+                  Museum Zoologi Sekolah Ilmu dan Teknologi Hayati (SITH) ITB didirikan tahun 1950-an. Para pendiri museum ini adalah para peneliti yang berasal dari Eropa dan Amerika Serikat,
+                  yaitu Prof. Poul Heegaard dan Prof. Walter Roepke yang melakukan berbagai ekspedisi ke berbagai wilayah di Indonesia pada tahun 1940 s.d. 1950-an.
+                  Koleksi yang didapatkan dari ekspedisi tersebut kemudian sebagian disimpan di Departemen Biologi ITB (sekarang menjadi SITH ITB) sebagai salah satu cara untuk menunjang penelitian
+                  dan pendidikan biologi, khususnya dalam bidang zoologi. Koleksi dan pengelolaan museum sejak tahun 1960-an hingga 2000-an kemudian dilanjutkan oleh mahasiswa dan dosen yang
+                  memiliki minat dalam bidang zoologi dan taksonomi seperti M. van Balgooy, Dr. H.S. Hardjasasmita, Prof. Soelaksono, serta Prof. Djoko T. Iskandar 
+                </p>
+                <p><strong>Memiliki 2.200 spesimen hewan</strong></p>
+                <p class="text-muted">
+                  <ul>
+                    <li>Total spesimen tersedia: 2.251 spesimen</li>
+                    <li>Total spesies tersedia: 1.027 spesies</li>
+                    <li>Amfibi: 92 spesies/836 spesimen</li>
+                    <li>Ikan: 307 spesies/ 437 spesimen</li>
+                    <li>Reptil: 175 spesies/ 319 spesimen</li>
+                    <li>Burung: 141 spesies/ 157 spesimen</li>
+                    <li>Mamalia: 54 spesies/ 130 spesimen</li>
+                    <li>Invertebrata: 258 spesies/ 372 spesimen</li>
+                  </ul>
+                </p>
+              </div>
+        </section>
+        <!--Section: Content-->
+        <br>
+        <table id="t01">
+          <tr>
+            <th>ITB Kampus Ganesha</th>
+            <th>ITB Kampus Jatinangor</th> 
+            <th>ITB Kampus Cirebon</th>
+          </tr>
+          <tr>
+            <td>Jl. Ganesa No. 10, Bandung, Jawa Barat, Indonesia</td>
+            <td>Kecamatan Jatinangor, Kabupaten Sumedang, Jawa Barat.</td>
+            <td> Kecamatan Arjawinangun Kabupaten Cirebon, dipersiapkan untuk pembangunan Kampus ITB di Cirebon.</td>
+          </tr>
+          <tr>
+            <td>Kampus ITB Ganesha didirikan pada tahun 1920<p> dengan nama Technische Hoogeschool.</td>
+            <td>Kampus ini dibangun di lahan aset milik <p>Pemerintah Provinsi Jawa Barat seluas 47 hektar.</td>
+            <td>Terdapat 4 program studi yang telah dibuka ITB di Kampus Cirebon,
+              <p>yaitu Sarjana Teknik Industri, Sarjana Perencanaan Wilayah dan Kota, <p>Sarjana Kriya, Sarjana Teknik Geofisika dan Sarjana Oseanografi.</td>
+          </tr>
+        </table>
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="text-center">
+          <h4 class="mb-5"><strong>Profile Video</strong></h4>
+          <iframe width="600" height="415" src="https://www.youtube.com/embed/LEQBMfn033M">
+          </iframe>
+          <div class="row" style="display: flex; justify-content: center;">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="img/face1.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Pimpinan</h5>
+                  <h6 class="card-title"><b>Rektor</b><p>
+                    Prof. Reini Wirahadikusumah, Ph.D.</p></h6>
+                  <p class="card-text">
+                    Prof. Reini Wirahadikusumah, Ph.D. adalah rektor wanita pertama di Institut Teknologi Bandung untuk periode 2020-2025
+                    yang melanjutkan kepemimpinan Prof. Dr. Ir. Kadarsah Suryadi, DEA sebagai rektor Institut Teknologi Bandung periode 2015-2020.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+        <hr class="my-5" />
+        <section class="mb-5">
+          <h5 class="mb-5 text-center"><strong>Sign In</strong></h5>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Last name</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <label class="form-label" for="form3Example4">Password</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sign In</button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>Follow Us</p>
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      
+      </div>
+    </main>
+    <!--Main layout-->
+    <!--Footer-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Location</h6>
+            <p class="text-justify">Kampus Ganesha merupakan kampus utama Institut Teknologi Bandung. Berlokasi di Jl. Ganesa No. 10, Bandung, Jawa Barat, Indonesia
+               dengan luas sekitar 28 hektar, kampus ini terus mengalami perluasan dan penambahan fasilitas.
+               Kampus ITB Ganesha didirikan pada tahun 1920 dengan nama Technische Hoogeschool.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Follow Us</h6>
+            <ul class="footer-links">
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+              <li><a href="https://twitter.com/login">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a>Rafi Taqiyuddin</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+</footer>
+    <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
